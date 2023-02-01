@@ -1,0 +1,209 @@
+.rowAllWhite{
+    background-image: url("imgTransparent.png");
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#video {
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px black;
+    width: 320px;
+    height: 240px;
+}
+.none{
+    display: none;
+}
+.gris{
+    filter: grayscale(1);
+}
+
+#photo  #canvas1{
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px black;
+    width: 720px;
+    height: 640px;
+}
+
+#canvas {
+    display: none;
+}
+
+.camera {
+    width: 340px;
+    display: inline-block;
+}
+
+.output {
+    width: 340px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#startbutton {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 32px;
+    background-color: rgba(0, 150, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+
+.contentarea {
+    font-size: 16px;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    width: 760px;
+}
+
+.mainDiv {
+    width: 740px;
+    height: 1024px;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./img.png");
+    background-repeat: no-repeat;
+}
+.forImage{
+    z-index: 0;
+    position: relative;
+    top: 40px;
+    left: 28px;
+    background-color: white;
+    height: 733px;
+    width: 621px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pic{
+    z-index: -5;
+    position: relative;
+    width: 966px;
+    height: 774px;
+    right: 174px;
+    clip-path: inset(42px 155px 0px 190px);
+}
+
+.image{
+    position: relative;
+    height: 730px;
+    width: 621px;
+}
+.forQrCode{
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    top: 110px;
+    left: 537px;
+}
+
+/* Animation waiting Template*/
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.load {
+    width: 100px;
+    height: 100px;
+    margin: 110px auto 0;
+    border:solid 10px #00C4B3;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    -webkit-transition: all 0.5s ease-in;
+    -webkit-animation-name:             rotate;
+    -webkit-animation-duration:         1.0s;
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+
+    transition: all 0.5s ease-in;
+    animation-name:             rotate;
+    animation-duration:         1.0s;
+    animation-iteration-count:  infinite;
+    animation-timing-function: linear;
+}
+
+
+/* Animation creating Template*/
+
+.fadeIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, sans-serif;
+    font-size: x-large;
+    height: 50vh;
+    width: 40vw;
+    background-color: #00C4B3;
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+}
+
+
+@keyframes fadeIn{
+    0% {
+        opacity:0;
+    }
+    10% {
+        opacity:1;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
